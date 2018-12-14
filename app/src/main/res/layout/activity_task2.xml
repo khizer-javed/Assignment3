@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Task2">
+
+    <TextView
+        android:id="@+id/Sd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#9ACD32"
+        android:fontFamily="serif"
+        android:paddingHorizontal="25dp"
+        android:paddingTop="40dp"
+        android:paddingBottom="40dp"
+        android:text="Student Database"
+        android:textColor="#f4ffde"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        app:fontFamily="serif" />
+
+    <ListView
+        android:layout_below="@+id/Sd"
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f4ffde">
+    </ListView>
+
+    <ImageButton
+        android:id="@+id/doneAdd"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:background="@drawable/add"
+        android:onClick="Add"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="20dp"/>
+
+</RelativeLayout>

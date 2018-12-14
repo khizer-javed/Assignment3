@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Task1"
+    android:orientation="vertical"
+    android:background="#f4ffde">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Stunning Free Images"
+        android:textSize="35dp"
+        android:paddingTop="40dp"
+        android:paddingBottom="40dp"
+        android:paddingHorizontal="25dp"
+        android:layout_marginBottom="30dp"
+        android:textColor="#f4ffde"
+        android:background="#9ACD32"
+        android:textStyle="bold"
+        app:fontFamily="serif" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/Search"
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="20dp"
+            android:hint="Search Images"
+            android:background="@android:color/white"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="#9ACD32"
+            android:onClick="search"
+            android:text="Search"
+            android:textColor="#f4ffde"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>
